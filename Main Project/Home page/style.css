@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    font-family: "Nunito", sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed;
+    background-color: white;
+    width: 100%; */
+}
+.dropdown button:focus + .content,
+.dropdown:hover .content {
+    display: block;
+}
+.dropdown button {
+    background-color:white;
+    font-size: 25px;
+    font-weight: 750;
+    outline:none;
+    border:none;
+    padding:10px;
+    margin:10px;
+    cursor:pointer;
+  }
+  .dropdown a{
+    display:block;
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    padding:10px 15px;
+    
+  }
+  .dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+}
+  .dropdown:hover .content{
+    display:flex;
+    flex-direction: column;
+    
+  }
+ 
+  .dropdown:hover button,
+.dropdown button:focus {
+    background-color: darkblue;
+    color: white;
+    border-radius: 4px;
+}
+video{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(600px, 1fr)); 
+    grid-template-rows: minmax(450px, 520px);
+    gap:40px; 
+    margin-bottom:40px ;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    }
+    .item{
+        background-color: white;
+        overflow: auto;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+    .heading{
+        border-bottom: 5px solid darkblue;
+    }
+    .box1 {
+    grid-column: 1 / span 1; 
+    
+    }
+
+    .box2 {
+        grid-column: 2 / span 1; 
+    }
+
+    .box3 {
+        grid-column: 3 / span 1; 
+        
+    }
+    
+    .boxcontent{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .main-info li{
+        list-style:square;
+        border-bottom: 2px dotted black;
+    }
+    .main-info li a{
+        text-decoration: none;
+        color: black;
+    }
+    .csp{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(600px, 1fr));
+        grid-template-rows: 370px;
+        gap: 40px;
+        margin-bottom:100px ;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .it{
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        text-align: center;
+    }
+    .cr,.sh,.plt{
+        border-bottom: 9px solid darkblue;
+        font-weight: 600;
+    }
+    .cspbox{
+        width: 100%;
+        height: 282px;
+        object-fit: cover;
+        /* object-position:n; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cspbox button{
+        align-self:flex-end;
+        margin-bottom: 20px;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 19px;
+        background-color: darkblue;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .cspbox button:hover,
+    .cspbox button:focus{
+        background-color: rgb(0, 0, 71);
+    }
+    .outer-box {
+        width: 100%;
+        height: 70vh;
+        background-image: url(../images/back.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .content-wrapper {
+        background-color: rgba(0, 0, 0, 0.650); /* Background color to control brightness */
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Ensure content doesn't overflow */
+    }
+    
+    .outer-box .heading3 {
+        text-align: center;
+        padding: 1px;
+        font-size: 40px;
+        color: white;
+        letter-spacing: 35px;
+    }
+    
+    .outer-box .flex-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .outer-box .acad-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fr);
+        row-gap: 50px;
+        column-gap: 70px;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .overlay h2{
+        color: white;
+        font-size: 30px;
+        padding: 15px 30px;
+        overflow: hidden;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.66);
+        border-radius: 5px;
+        border: none;
+    }
+    .image-building{
+        position: relative;
+
+    }
+    .image-building img{
+        width: 450px;
+    }
+    .overlay button {
+        background-color: darkblue;
+        color: white;
+        padding: 10px 15px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .outer-box .acad-box img {
+        border-radius: 7px;
+    }
+    .other-info{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:  minmax(450px, 550px);
+        gap: 15px;
+    }
+    .in{
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    }
+    .in > header{
+        text-align: center;
+        border-bottom: 7px solid darkblue;
+    }
+    .in > .ad{
+        padding: 0px 40px;
+        font-size: 23px;
+        line-height: 40px;
+    }
+    
+    .mp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    li .lists{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .last li{
+        list-style: square;
+    }
+    
+    

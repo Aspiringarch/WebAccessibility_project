@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Text and Button Overlay</title>
+<style>
+    .container {
+        position: relative;
+        width: 300px; 
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .overlay p {
+        color: white;
+        font-size: 24px;
+    }
+    .overlay button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="../images/CENTAB.jpg" alt="Example Image">
+    <div class="overlay">
+        <p>Some text overlay</p>
+        <button>Click me</button>
+    </div>
+</div>
+
+</body>
+</html>

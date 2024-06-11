@@ -1,0 +1,153 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .middle{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .item{
+            text-decoration: none;
+            color: black;
+            border: 3px solid black;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: color 0.4s linear;
+            position: relative;
+        }
+        .item:hover{
+            color: #fff;
+        }
+        .item::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: black;
+            z-index: -1;
+            transition: transform 0.5s;
+            transform-origin: 0 0 ;
+            transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7);
+        }
+        .b1::before{
+        transform: scaleX(0);
+        }
+        .b2::before{
+        transform: scaleX(0);
+        }
+        .b1:hover::before{
+            transform: scaleX(1);
+        }
+        .b2:hover::before{
+            transform: scaleY(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="middle">
+        <a href="#" class="item b1">Hover Me</a>
+        <a href="#" class="item b2">Hover Me</a>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-box{
+            background-image:url(../images/back.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            background-attachment: fixed;
+        }
+        .acad-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-left: 135px;
+            row-gap: 50px;
+            
+        }
+        .acad-box img{
+            border-radius: 7px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="heading3">
+            <header style="text-align: center; padding: 1px; font-size: 50px; color: white;"><h1>Academics</h1></header>
+        </div>
+        <div class="acad-box">
+            
+            <img class="i1" src="../images/CENTAB.jpg" alt="">
+            <img class="i2" src="../images/Chanakya.jpg" alt="">
+            <img class="i3" src="../images/JVC.jpg" alt="">
+            <img class="i4" src="../images/NIRMAN.jpg" alt="">
+            <img class="i5" src="../images/NIRMAN.jpg" alt="">
+            <img class="i6" src="../images/VV.jpg" alt="">
+            <img class="i7" src="../images/VKJ.jpg" alt="">
+            <img class="i8" src="../images/SOC.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .info-cont{
+            display: flex;
+            flex-direction: column;
+        }
+        a{
+            
+            padding: 10px 40px;
+            text-decoration: none;
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="info-cont">
+        <a href="#">Online Payment</a>
+            <ul>
+                <li>ONLINE TUITION FEE / CUB</li>
+                <li>SRC ONLINE TUITION FEE / CUB</li>
+                <li>ONLINE EXAM / MESS FEE</li>
+            </ul>
+        <a href="#">Student Permission / Leave Portal</a>
+        <a href="#">Campus Map</a>
+        <a href="#">Welcome Kit</a>
+    </div>
+</body>
+</html>
